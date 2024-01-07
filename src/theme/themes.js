@@ -1,45 +1,45 @@
 export const lightTheme = {
-  background: '#fff',
-  color: '#121212',
-  accentColor: '#3D84C6',
+  background: '#FAFAFA', // Light gray
+  color: '#333333', // Dark gray
+  accentColor: '#FF5722', // Orange
   chronoTheme: {
     cardBgColor: 'white',
-    cardForeColor: 'black',
-    titleColor: 'white',
+    cardForeColor: '#333333', // Dark gray
+    titleColor: '#333333', // Dark gray
   },
-  timelineLineColor: '#ccc',
-  cardBackground: '#fff',
-  cardFooterBackground: '#f7f7f7',
+  timelineLineColor: '#BDBDBD', // Light gray
+  cardBackground: 'white',
+  cardFooterBackground: '#F5F5F5', // Light gray
   cardBorderColor: '#00000020',
   navbarTheme: {
-    linkColor: '#dedede',
-    linkHoverColor: '#fefefe',
-    linkActiveColor: '#fefefe',
+    linkColor: '#333333', // Dark gray
+    linkHoverColor: '#FF5722', // Orange
+    linkActiveColor: '#FF5722', // Orange
   },
   bsPrimaryVariant: 'light',
   bsSecondaryVariant: 'dark',
-  socialIconBgColor: '#121212',
+  socialIconBgColor: '#333333', // Dark gray
 };
 
 export const darkTheme = {
-  background: '#121212',
-  color: '#eee',
-  accentColor: '#3D84C6',
+  background: '#121212', // Dark background
+  color: '#E0E0E0', // Light gray
+  accentColor: '#00BCD4', // Cyan
   chronoTheme: {
-    cardBgColor: '#1B1B1B',
-    cardForeColor: '#eee',
-    titleColor: 'black',
+    cardBgColor: '#1B1B1B', // Dark gray
+    cardForeColor: '#E0E0E0', // Light gray
+    titleColor: '#00BCD4', // Cyan
   },
-  timelineLineColor: '#444',
-  cardBackground: '#060606',
-  cardFooterBackground: '#181818',
-  cardBorderColor: '#ffffff20',
+  timelineLineColor: '#444', // Dark gray
+  cardBackground: '#060606', // Very dark gray
+  cardFooterBackground: '#181818', // Dark gray
+  cardBorderColor: '#FFFFFF20', // White with transparency
   navbarTheme: {
-    linkColor: '#dedede',
-    linkHoverColor: '#fefefe',
-    linkActiveColor: '#fefefe',
+    linkColor: '#E0E0E0', // Light gray
+    linkHoverColor: '#00BCD4', // Cyan
+    linkActiveColor: '#00BCD4', // Cyan
   },
   bsPrimaryVariant: 'dark',
   bsSecondaryVariant: 'light',
-  socialIconBgColor: '#fefefe',
+  socialIconBgColor: '#00BCD4', // Cyan
 };

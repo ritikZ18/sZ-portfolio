@@ -1,3 +1,4 @@
+/* eslint-disable import/no-unresolved */
 import React, { useState, useEffect } from 'react';
 import ReactMarkdown from 'react-markdown';
 import { Container, Col, Row } from 'react-bootstrap';
@@ -6,6 +7,7 @@ import Fade from 'react-reveal';
 import Header from './Header';
 import endpoints from '../constants/endpoints';
 import FallbackSpinner from './FallbackSpinner';
+import '../css/about.css';
 
 const styles = {
   introTextContainer: {
@@ -15,6 +17,10 @@ const styles = {
     textAlign: 'left',
     fontSize: '1.2em',
     fontWeight: 500,
+    // eslint-disable-next-line no-dupe-keys
+    textAlign: 'justify',
+    color: '#F6BE00',
+    justifyContent: 'center',
   },
   introImageContainer: {
     margin: 10,

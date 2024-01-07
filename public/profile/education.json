@@ -1,19 +1,27 @@
 {
     "education":[
         {
-            "title": "Jun 20XX - Jun 20YY",
-            "cardTitle": "B.Tech, Computer Science",
-            "cardSubtitle":"XYZ University, City",
-            "cardDetailedText": "CGPA - 9.5",
+            "title": "Jun 2020 - Jun 2024",
+            "cardTitle": "B.E. Computer Science",
+            "cardSubtitle":"Vidyalankar Institute of Technology, Mumbai",
+            "cardDetailedText": "CGPA - 9.2",
             "icon" : {
                 "src": "images/education/lorem-ipsum.png"
             }
         },
+
         {
-            "title": "Apr 20XX",
-            "cardTitle": "High School",
-            "cardSubtitle":"ABC School, City",
-            "cardDetailedText": "Marks - 95%"
+            "title": "Apr 2020",
+            "cardTitle": "H.S.C. ",
+            "cardSubtitle":"Brahma Valley Public School and Jr College, Nashik",
+            "cardDetailedText": "Marks - 78%"
+        },
+        {
+            "title": "May 2018",
+            "cardTitle": "S.S.C.",
+            "cardSubtitle":"Vikhe Patil Memorial School, Nashik",
+            "cardDetailedText": "Marks - 93%"
         }
+
     ]
 }
