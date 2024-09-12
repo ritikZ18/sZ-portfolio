@@ -33,14 +33,6 @@ const styles = {
     letterSpacing: '-0.09em',
   },
 
-  fieldsOfInteresth2: {
-    letterSpacing: '-0.09em',
-  },
-
-  fieldsOfInteresth2: {
-    letterSpacing: '-0.09em',
-  },
-
   introTextContainerh1: {
     color: '#FAF9F6 ',
   },
