@@ -18,15 +18,35 @@ const styles = {
     background: '',
     flexDirection: 'column',
     whiteSpace: 'pre-wrap',
-    textAlign: 'left',
+    textAlign: 'justify',
     fontSize: '1.2em',
     fontWeight: 500,
-    color: '#F6BE00',
+    color: 'green',
     justifyContent: 'center',
   },
 
+  keyAreash2: {
+    letterSpacing: '-0.09em',
+  },
+
+  fieldsOfInteresth2: {
+    letterSpacing: '-0.09em',
+  },
+
+  fieldsOfInteresth2: {
+    letterSpacing: '-0.09em',
+  },
+
+  fieldsOfInteresth2: {
+    letterSpacing: '-0.09em',
+  },
+
   introTextContainerh1: {
-    color: '#2C3E50 ',
+    color: '#FAF9F6 ',
+  },
+
+  currentProjecth2: {
+    color: '#faf9f6',
   },
 
   introImageContainer: {
@@ -76,21 +96,21 @@ function About(props) {
                     <h1 style={styles.introTextContainerh1}>Introduction</h1>
                     <p>{data.about.introduction}</p>
 
-                    <h2>{data.about.currentFocus}</h2>
+                    <h2 style={styles.keyAreash2}>{data.about.currentFocus}</h2>
                     <ul style={styles.list}>
                       {data.about.keyAreas.map((area, index) => (
                         <li key={index}>{area}</li>
                       ))}
                     </ul>
 
-                    <h2> Current Projects: </h2>
+                    <h2 style={styles.currentProjecth2}> Current Projects: </h2>
                     <ul style={styles.list}>
                       {data.about.currentProject.map((field, index) => (
                         <li key={index}>{field}</li>
                       ))}
                     </ul>
 
-                    <h2>{data.about.learningJourney}</h2>
+                    <h2 style={styles.fieldsOfInteresth2}>{data.about.learningJourney}</h2>
                     <ul style={styles.list}>
                       {data.about.fieldsOfInterest.map((field, index) => (
                         <li key={index}>{field}</li>

@@ -19,6 +19,11 @@ const styles = {
     justifyContent: 'center',
     alignItems: 'center',
   },
+  imageStyle: {
+    width: '300px',
+    borderRadius: '50%',
+    marginTop: '20px',
+  },
 };
 
 function Home() {

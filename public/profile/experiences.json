@@ -4,9 +4,9 @@
         {
             "title": "Web Development Intern", 
             "subtitle": "Sugamya Digital",
-            "workType": "Intern",
+            "workType": "[Intern]",
             "workDescription": [
-                "Technology : Laravel  ",
+                "Technology : Laravel &  SQL   ",
                 "Created various project Components and RESTful APIs ",
                 "Worked on custom middleware for Request Validation and used Laravel Blade Templating engine to create dynamic and resuable Views. Reduced development time by 20%."
             ],
