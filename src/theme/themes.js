@@ -12,7 +12,7 @@ export const lightTheme = {
   cardFooterBackground: '#F5F5F5', // Light gray
   cardBorderColor: '#00000020',
   navbarTheme: {
-    linkColor: '#333333', // Dark gray
+    linkColor: '#fff', // Dark gray
     linkHoverColor: '#FF5722', // Orange
     linkActiveColor: '#FF5722', // Orange
   },

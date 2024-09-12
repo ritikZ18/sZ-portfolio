@@ -1,5 +1,18 @@
 {
     "education":[
+
+
+        {
+            "title": "expected Graduation 2026",
+            "cardTitle": "Masters of Computer Software Engneering",
+            "cardSubtitle":"Ariozna State University, United States",
+            "cardDetailedText": "",
+            "icon" : {
+                "src": "images/education/lorem-ipsum.png"
+            }
+        },
+
+
         {
             "title": "Jun 2020 - Jun 2024",
             "cardTitle": "B.E. Computer Science",
