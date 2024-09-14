@@ -1,0 +1,46 @@
+{
+    "education":[
+
+
+        {
+            "title": "expected Graduation 2026",
+            "cardTitle": "Masters of Computer Software Engneering",
+            "cardSubtitle":"Ariozna State University, United States",
+            "cardDetailedText": "",
+            "icon" : {
+                "src": "images/education/lorem-ipsum.png"
+            }
+        },
+
+
+        {
+            "title": "Jun 2020 - Jun 2024",
+            "cardTitle": "B.E. Computer Science",
+            "cardSubtitle":"Vidyalankar Institute of Technology, Mumbai",
+            "cardDetailedText": "CGPA - 9.2",
+            "icon" : {
+                "src": ""
+            }
+        },
+
+        {
+            "title": "Apr 2020",
+            "cardTitle": "H.S.C. ",
+            "cardSubtitle":"Brahma Valley Public School and Jr College, Nashik",
+            "cardDetailedText": "Grades - 78%",
+            "icon" : {
+                "src": ""
+            }
+        },
+        {
+            "title": "May 2018",
+            "cardTitle": "S.S.C.",
+            "cardSubtitle":"Vikhe Patil Memorial School, Nashik",
+            "cardDetailedText": "Grades - 93%",
+            "icon" : {
+                "src": ""
+            }
+        }
+
+    ]
+}

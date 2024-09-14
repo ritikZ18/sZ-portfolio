@@ -1,0 +1,34 @@
+{
+    "about": {
+        "introduction:": "Greetings! I'm Ritik Zambre, a Master's student in Software Engineering at Arizona State University.",
+        "currentFocus": "With a passion for cutting-edge technologies, I am deeply engaged in exploring and honing my skills in :",
+        "keyAreas": [
+            "Web Technology",
+            "Machine Learning",
+            "Cloud Computing",
+            "Web 3.0 Blockchain "
+        ],
+        "currentProject": [
+             "Personal Finance Tracker with Expense Prediction",
+             "Automated Meal Planner and GroceryList Genrator",
+             "Smart Task manager with Priortization"
+        ],
+        "learningJourney": "I am an avid learner with a continuous interest in diverse technological fields, including :",
+        "fieldsOfInterest": [
+            "Artificial Intelligence (AI)",
+            "Web Designing and API Devlopment",
+            "DevOps"
+        ],
+        "softSkills": "In addition to my technical skills, I possess strong soft skills that enhance my teamwork and communication, including :",
+        "softSkillsList": [
+            "Effective Communication",
+            "Team Collaboration",
+            "Dancing"
+        ],
+        "personalInterests": [
+            "Traveling : Enthusiastic about exploring new destinations and cultures.",
+            "Videography : Passionate about capturing and sharing my adventures."
+        ],
+        "imageSource": "images/about/profile.png"
+    }
+}

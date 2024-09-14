@@ -1,0 +1,17 @@
+{
+    "social": [
+        {
+            "network" : "linkedin",
+            "href": "https://linkedin.com/in/ritik-zambre-3309aa204"
+        },
+        {
+            "network" : "github",
+            "href": "https://github.com/ritikZ18"
+        },
+        
+        {
+            "network" : "email",
+            "href": "mailto:ritikzambre1404@gmail.com"
+        }
+    ]
+}

@@ -1,0 +1,39 @@
+{
+    "logo" : {
+        "source": "images/SwamiZero.png",
+        "height" : 55,
+        "width" : 60
+    },
+    "sections": [
+        {
+            "title": "Home",
+            "href": "/"
+        },
+        {
+            "title": "About",
+            "href": "/about"
+        },
+        {
+            "title": "Skills",
+            "href": "/skills"
+        },
+        {
+            "title": "Education",
+            "href": "/education"
+        },
+        {
+            "title": "Experience",
+            "href": "/experience"
+        },
+        {
+            "title": "Projects",
+            "href": "/projects"
+        },
+        {
+            "title": "Resume",
+            "href": "https://drive.google.com/file/d/1j30h-rPS8hUWvg2vP-nEJufZBvEQK_FW/view?usp=sharing",
+            "type": "link"
+        }
+    ]
+
+}

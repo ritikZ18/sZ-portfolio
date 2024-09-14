@@ -1,0 +1,43 @@
+{
+    "experiences": [
+        
+        {
+            "title": "Web Development Intern", 
+            "subtitle": "Sugamya Digital",
+            "workType": "[Intern]",
+            "workDescription": [
+                "Technology : Laravel &  SQL   ",
+                "Created various project Components and RESTful APIs ",
+                "Worked on custom middleware for Request Validation and used Laravel Blade Templating engine to create dynamic and resuable Views. Reduced development time by 20%."
+            ],
+            "dateText": "01/2024  -  06/2024"
+        },
+
+        {
+            "title": "Design and Web Development Intern", 
+            "subtitle": "Digirise Infolabs Pvt. Ltd.",
+            "workType": "[Apprentice]",
+            "workDescription": [
+                "Technology : Laravel and SQL , (HTML CSS JS) ",
+                "Created various Live Deployed project components",
+                "Worked on adding Lazy Loading Feature in Client Website. Improved speed by 50%."
+            ],
+            "dateText": "07/2023  -  09/2023"
+        },
+
+
+
+        {
+            "title": "Web Development Team Assosiate",
+            "subtitle": "Vidyalankar Institute of Technology",
+            "workType": "[Project Associate]",
+            "workDescription": [
+                
+                "Technology : Reactjs , Nodejs with Express , MongoDB ",
+                "Developed an official website for the College purpose. ERP like Evaluation Services specialised portal for college personnels based on Hybrid React Framework.",
+                "Worked on Frontend side of the development cycle and Testing Services, making it more robust using PWA's."
+            ],
+            "dateText": "08/2023 – 12/2023"
+        }
+    ]
+}
