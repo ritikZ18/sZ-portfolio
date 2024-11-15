@@ -1,8 +1,5 @@
-/* eslint-disable no-unused-vars */
 /* eslint-disable react/no-array-index-key */
-/* eslint-disable import/no-unresolved */
 import React, { useState, useEffect, useContext } from 'react';
-import ReactMarkdown from 'react-markdown';
 import { Container, Col, Row } from 'react-bootstrap';
 import PropTypes from 'prop-types';
 import Fade from 'react-reveal/Fade';
@@ -14,79 +11,70 @@ import '../css/about.css';
 
 const About = (props) => {
   const { header } = props;
-  const theme = useContext(ThemeContext); // Get theme context
+  const theme = useContext(ThemeContext);
   const [data, setData] = useState(null);
 
-  // Define styles based on the active theme (light or dark)
   const styles = {
+    container: {
+      display: 'flex',
+      flexDirection: 'row',
+      justifyContent: 'space-between',
+      marginTop: '30px',
+    },
+    textContainer: {
+      flex: 1,
+      paddingLeft: '40px',
+    },
+    imageContainer: {
+      flex: 1,
+      textAlign: 'center',
+      paddingRight: '40px',
+      marginTop: '30px',
+    },
+    image: {
+      width: '80%',
+      borderRadius: '50%',
+      marginTop: '30px',
+      boxShadow: '0 8px 16px rgba(0, 0, 0, 0.15)',
+      position: 'sticky', // Keep image fixed
+      top: '50px',
+    },
     introTextContainer: {
       textAlign: 'justify',
-      fontSize: '1.2em',
+      fontSize: '1.1em',
       fontWeight: 500,
       color: theme.color,
-      padding: '20px',
+      padding: '30px',
       borderRadius: '15px',
       backgroundColor: theme.cardBackground,
-      boxShadow: `0 4px 10px ${theme.cardBorderColor}`,
-      transition: 'transform 0.3s ease, background-color 0.3s ease',
-      margin: '10px 0',
+      boxShadow: `0 4px 20px ${theme.cardBorderColor}`,
+      margin: '20px 0',
       position: 'relative',
+      transform: 'scale(1)',
+      cursor: 'pointer',
     },
     heading: {
-      fontSize: '1.8em',
+      fontSize: '2.2em',
       fontWeight: 'bold',
       color: theme.accentColor,
-      marginBottom: '10px',
+      marginBottom: '15px',
     },
     subHeading: {
       color: theme.chronoTheme.titleColor,
-      fontSize: '1.5em',
-      marginTop: '15px',
-      marginBottom: '10px',
+      fontSize: '1.8em',
+      marginTop: '20px',
+      marginBottom: '12px',
     },
     list: {
       listStyleType: 'disc',
       paddingLeft: '20px',
       color: theme.color,
-    },
-    imageContainer: {
-      marginTop: '20px',
-      textAlign: 'center',
-    },
-    image: {
-      maxWidth: '100%',
-      borderRadius: '10px',
-      boxShadow: '0 4px 10px rgba(0, 0, 0, 0.15)',
-    },
-    card: {
-      position: 'relative',
-      overflow: 'hidden',
-      borderRadius: '15px',
-      transition: 'transform 0.3s ease, background-color 0.3s ease',
-    },
-    badge: {
-      position: 'absolute',
-      top: '10px',
-      right: '10px',
-      backgroundColor: theme.accentColor,
-      color: '#fff',
-      padding: '5px 10px',
-      borderRadius: '20px',
-      fontSize: '0.8em',
-    },
-    hoverEffect: {
-      transition: 'transform 0.3s ease',
-    },
-    hoverScale: {
-      transform: 'scale(1.05)',
-      boxShadow: '0 8px 16px rgba(0,0,0,0.2)',
+      fontSize: '1em',
     },
   };
 
   useEffect(() => {
-    fetch(endpoints.about, {
-      method: 'GET',
-    })
+    fetch(endpoints.about, { method: 'GET' })
       .then((res) => res.json())
       .then((res) => setData(res))
       .catch((err) => console.error(err));
@@ -99,9 +87,16 @@ const About = (props) => {
         <Container>
           {data ? (
             <Fade>
-              <Row>
-                <Col>
+              <Row style={styles.container}>
+                {/* Image on the Left */}
+                <Col style={styles.imageContainer}>
+                  <img src={data.about.imageSource} alt="profile" style={styles.image} />
+                </Col>
+
+                {/* Information on the Right */}
+                <Col style={styles.textContainer}>
                   <h1 style={styles.heading}>About Me</h1>
+
                   <div style={styles.introTextContainer}>
                     <h2 style={styles.subHeading}>Introduction</h2>
                     <p>{data.about.introduction}</p>
@@ -151,9 +146,6 @@ const About = (props) => {
                       ))}
                     </ul>
                   </div>
-                </Col>
-                <Col style={styles.imageContainer}>
-                  <img src={data.about.imageSource} alt="profile" style={styles.image} />
                 </Col>
               </Row>
             </Fade>

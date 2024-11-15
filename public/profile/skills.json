@@ -1,99 +1,116 @@
 {
-    "intro": "I love to learn new things and experiment with new technologies.\nThese are some of the major Languages, Technologies, Tools and Platforms I have worked with:",
-    "skills": [{
-     
-            "title": "Languages ",
-            "items" : [
-     
-                {
-                    "icon": "images/skills/js.png",
-                    "title": "JavaScript"
-                },
-                {
-                    "icon": "images/skills/php.png",
-                    "title": "PHP"
-                },
-                {
-                    "icon": "images/skills/java.png",
-                    "title": "Java"
-                },
-                {
-                    "icon": "images/skills/solidity.png",
-                    "title": "Solidity"
-                },
-                {
-                    "icon": "images/skills/python.png",
-                    "title": "Python"
-                }
-        ]},
-
-
-
-
-
-
+  "intro": "Learn new things and experiment with Technologies.\nLanguages, Technologies, Tools and Platforms I have worked with:",
+  "skills": [
+    {
+      "title": "Languages ",
+      "items": [
+        {
+          "icon": "images/skills/js.png",
+          "title": "JavaScript"
+        },
 
         {
-     
-            "title": " Database ",
-            "items" : [
-     
-               
-                {
-                    "icon": "images/skills/AWS.jpg",
-                    "title": "AWS"
-                },
-                {
-                    "icon": "images/skills/mongo-db.png",
-                    "title": "MongoDB"
-                },
-                {
-                    "icon": "images/skills/firebase.png",
-                    "title": "Firebase"
-                }
-        ]},
-
-
-
-
-
+          "icon": "images/skills/java.png",
+          "title": "Java"
+        },
 
         {
-            "title": "Frameworks & Technologies",
-            "items" : [
-                {
-                    "icon": "images/skills/flask.png",
-                    "title": "Flask"
-                },
-                {
-                    "icon": "images/skills/react.png",
-                    "title": "React"
-                },
-                {
-                    "icon": "images/skills/nodejs.png",
-                    "title": "NodeJS"
-                },
-                {
-                    "icon": "images/skills/expressjs1.png",
-                    "title": "ExpressJS"
-                }
-            ]
+          "icon": "images/skills/python.png",
+          "title": "Python"
+        }
+      ]
+    },
+
+    {
+      "title": " Database ",
+      "items": [
+
+        {
+          "icon": "images/skills/firebase.png",
+          "title": "MySQL"
         },
         {
-            "title" : "Tools & Platforms",
-            "items": [
-                {
-                    "icon": "images/skills/vscode.png",
-                    "title": "VS Code"
-                },
-                {
-                    "icon": "images/skills/git.png",
-                    "title": "Git"
-                },
-                {
-                    "icon": "images/skills/netlify.png",
-                    "title": "Netlify"
-                }
-            ]
+          "icon": "images/skills/mongo-db.png",
+          "title": "MongoDB"
+        }
+      ]
+    },
+
+    {
+      "title": "Frameworks & Technologies",
+      "items": [
+        {
+            "icon": "images/skills/AWS.jpg",
+            "title": "AWS"
+        },
+        {
+          "icon": "images/skills/spring-boot.png",
+          "title": "Spring Boot"
+        },
+        {
+          "icon": "images/skills/react.png",
+          "title": "React"
+        },
+        {
+          "icon": "images/skills/nodejs.png",
+          "title": "NodeJS"
+        },
+        {
+          "icon": "images/skills/expressjs1.png",
+          "title": "ExpressJS"
+        }
+      ]
+    },
+    {
+      "title": "Tools & Platforms",
+      "items": [
+        {
+          "icon": "images/skills/vscode.png",
+          "title": "VS Code"
+        },
+        {
+          "icon": "images/skills/git.png",
+          "title": "Git"
+        },
+        {
+          "icon": "images/skills/netlify.png",
+          "title": "Netlify"
+        }
+      ]
+    },
+
+    {
+        "title": "Other Industry Relevant Skills",
+        "items": [
+            {
+                "icon": " ",
+                "title": " "
+            },
+
+            {
+                "icon": " ",
+                "title": " "
+            },
+
+            {
+                "icon": " ",
+                "title": " "
+            },
+
+            {
+                "icon": " ",
+                "title": " "
+            },
+
+            {
+                "icon": " ",
+                "title": " "
+            }
+        ]
     }
-]}
+
+
+
+
+  ]
+}

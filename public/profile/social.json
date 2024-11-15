@@ -2,16 +2,18 @@
     "social": [
         {
             "network" : "linkedin",
-            "href": "https://linkedin.com/in/ritik-zambre-3309aa204"
+            "href": "https://linkedin.com/in/ritik-zambre-3309aa204",
+            "show": "Ritik Zambre"
         },
         {
             "network" : "github",
-            "href": "https://github.com/ritikZ18"
+            "href": "https://github.com/ritikZ18",
+            "show" : "github/ ritikZ18"
         },
         
         {
             "network" : "email",
-            "href": "mailto:ritikzambre1404@gmail.com"
+            "href": "mailto: ritikzambre1404@gmail.com"
         }
     ]
 }

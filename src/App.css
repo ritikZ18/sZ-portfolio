@@ -128,43 +128,46 @@ section.timeline-card-content div.card-description > p {
   justify-content: center;
 }
 
-/* Add the effect for GitHub on hover */
-.github-hover {
-  position: relative;
+.social-icon-wrapper {
+  position: relative; /* Anchor the hover text relative to this element */
   display: inline-block;
-  transition: transform 0.3s ease;
+  margin: 10px;
+  text-align: center;
 }
 
-.github-hover:hover::before,
-.github-hover:hover::after {
-  content: "";
-  position: absolute;
-  width: 40px;
-  height: 40px;
-  /* background-color: #333; GitHub color */
-  border-radius: 50%;
-  transition: all 0.3s ease;
+.email-hover, .github-hover, .linkedin-hover {
+  position: absolute; /* Position it relative to the parent */
+  bottom: -30px; /* Adjust this based on your design */
+  left: 50%; /* Center it horizontally */
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.8); /* Optional: Background for better readability */
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 12px;
+  visibility: hidden; /* Hidden by default */
+  opacity: 0; /* Invisible initially */
+  transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); Soft shadow */
 }
 
-.github-hover:hover::before {
-  top: -20px;
-  left: -20px;
-}
+.social-icon-wrapper:hover .email-hover, 
+.social-icon-wrapper:hover .github-hover, 
+.social-icon-wrapper:hover .linkedin-hover {
+  /* background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%); */
+  /* background: linear-gradient(45deg, #ff6a00, #ee0979); */
+  background: linear-gradient(45deg, #00b4d8, #0077b6);
 
-.github-hover:hover::after {
-  top: -20px;
-  right: -20px;
-}
-
-/* Email hover effect to show the email address */
-.email-hover {
-  margin-left: 10px;
-  /* color: #555; */
+  color: #000;
   font-size: 14px;
   font-weight: bold;
-  display: inline-block;
-  transition: opacity 0.3s ease;
+  font-family: 'Roboto', sans-serif; /* Google Font Example */
+  visibility: visible; /* Show on hover */
+  opacity: 1; /* Make it fully visible */
+  transform: translateX(-50%) translateY(10px);
 }
+
+
 
 
 
