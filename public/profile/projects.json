@@ -22,7 +22,7 @@
         },
         {
             "image" : "images/projects/caaring-poster.png",
-            "title": "Caaring -  Cab Share App",
+            "title": "Craze - Banking Application",
             "bodyText": "- A Cab Sharing web app made using **Django** for **VIT** Students. People can create a new cab or request to join an existing cab.\n - Added User authentication and password reset using **SendGrid**.\n - Deployed on **heroku** using **gunicorn**.",
             "links": [
                 {
@@ -45,20 +45,41 @@
             ]
         },
         {
-            "image" : "images/projects/quiet-hours-poster.jpg",
-            "title": "Quiet Hours App",
+            "image" : "images/projects/food-website.png",
+            "title": "Food Website ( Frontend )",
             "bodyText": "- An Android App that **automatically silences** your phone during class hours, designed for **VITians**.\n - Option to select class **slots** and **custom time**.\n - Option to put on Vibrate instead of Silent.",
             "links": [
                 {
                     "text": "GitHub",
-                    "href": "https://github.com/mayankagarwal09/QuietHours-Android"
+                    "href": "https://github.com/ritikZ18/food-website-biryani"
+                },
+                {
+                    "text": "Live",
+                    "href": "https://illustrious-shortbread-a9fb02.netlify.app/"
+                }
+            ],
+            "tags" : [
+                "HTML",
+                "CSS",
+                "JavaScript",
+                "VIT"
+            ]
+        },
+        
+        {
+            "title": "Target : E Commerce Application",
+            "bodyText": "- An Android App that allows users to send texts in real time.\n - End to End encryption using **RSA** Algorithm.\n - Uses **Firebase** database to store texts.\n - Secured with **Fingerprint** lock.",
+            "links": [
+                {
+                    "text": "GitHub",
+                    "href": "https://github.com/mayankagarwal09/SecureChatApp"
                 }
             ],
             "tags" : [
                 "Java",
                 "Android",
-                "Alarm Manager",
-                "VIT"
+                "Firebase",
+                "RSA"
             ]
         },
         {
@@ -78,7 +99,7 @@
             ]
         },
         {
-            "title": "MVVM Sample App",
+            "title": "Money Tracker Web App",
             "bodyText": "- An Android App that loads data from mock API and show in both **LinearLayout** and **GridLayout RecyclerView**.\n - Offline support using **Room** DB and **NetworkBoundResource**.\n - Uses the **MVVM** architecture.",
             "links": [
                 {

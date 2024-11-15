@@ -58,6 +58,28 @@
   height: 100%;
 }
 
+
+.profile-img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.profile-img:hover {
+  transform: scale(1.05);
+}
+
+.introTextContainer:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+
+
+
 .section-content-container {
   display: flex;
   flex-direction: column;
@@ -101,9 +123,49 @@ section.timeline-card-content div.card-description > p {
 }
 
 .social {
-  position: relative;
-  margin-top: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
+/* Add the effect for GitHub on hover */
+.github-hover {
+  position: relative;
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.github-hover:hover::before,
+.github-hover:hover::after {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  /* background-color: #333; GitHub color */
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.github-hover:hover::before {
+  top: -20px;
+  left: -20px;
+}
+
+.github-hover:hover::after {
+  top: -20px;
+  right: -20px;
+}
+
+/* Email hover effect to show the email address */
+.email-hover {
+  margin-left: 10px;
+  /* color: #555; */
+  font-size: 14px;
+  font-weight: bold;
+  display: inline-block;
+  transition: opacity 0.3s ease;
+}
+
 
 
 @media only screen and (min-width: 768px) and (max-width: 992px) {
@@ -148,3 +210,62 @@ section.timeline-card-content div.card-description > p {
   margin-bottom: 25px;
 }
 
+
+body {
+  margin: 0;
+  background-color: black;
+ scrollbar-color: black;
+}
+
+.geometric-shapes-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Ensure shapes are behind content */
+}
+
+.shape {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px); /* Glass effect */
+  border-radius: 50%;
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.5); /* Glow effect */
+  animation: float 6s ease-in-out infinite; /* Floating animation */
+}
+
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-15px); }
+  100% { transform: translateY(0); }
+}
+
+/* Custom shapes with specific sizes and positions */
+.circle { width: 150px; height: 150px; }
+.square { width: 200px; height: 200px; }
+.triangle {
+  width: 0;
+  height: 0;
+  border-left: 75px solid transparent;
+  border-right: 75px solid transparent;
+  border-bottom: 150px solid rgba(255, 255, 0.2);
+}
+.rectangle { width: 300px; height: 100px; }
+.pentagon {
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 100px solid rgba(0, 255, 255, 0.3);
+}
+
+/* Position shapes evenly across the screen */
+.shape:nth-child(1) { top: 10%; left: 10%; }
+.shape:nth-child(2) { top: 10%; right: 10%; }
+.shape:nth-child(3) { top: 50%; left: 20%; }
+.shape:nth-child(4) { top: 30%; right: 30%; }
+.shape:nth-child(5) { top: 70%; left: 40%; }
+.shape:nth-child(6) { top: 80%; right: 20%; }
+.shape:nth-child(7) { top: 20%; left: 50%; }
+.shape:nth-child(8) { top: 40%; left: 80%; }
+.shape:nth-child(9) { top: 60%; right: 40%; }
+.shape:nth-child(10) { top: 90%; left: 30%; }

@@ -14,6 +14,7 @@ const styles = {
 function Social() {
   const theme = useContext(ThemeContext);
   const [data, setData] = useState(null);
+  const [hoveredEmail, setHoveredEmail] = useState(false);
 
   useEffect(() => {
     fetch(endpoints.social, {
@@ -24,19 +25,37 @@ function Social() {
       .catch((err) => err);
   }, []);
 
+  const handleEmailHover = (hovering) => {
+    setHoveredEmail(hovering);
+  };
+
   return (
     <div className="social">
-      {data ? data.social.map((social) => (
-        <SocialIcon
-          key={social.network}
-          style={styles.iconStyle}
-          url={social.href}
-          network={social.network}
-          bgColor={theme.socialIconBgColor}
-          target="_blank"
-          rel="noopener"
-        />
-      )) : null}
+      {data ? data.social.map((social) => {
+        const isGithub = social.network === 'github';
+        const isEmail = social.network === 'email';
+
+        return (
+          <div
+            key={social.network}
+            className={`social-icon-wrapper ${isGithub ? 'github-hover' : ''}`} // Apply special class for GitHub
+            onMouseEnter={() => isEmail && handleEmailHover(true)} // Show email on hover
+            onMouseLeave={() => isEmail && handleEmailHover(false)} // Hide email on hover
+          >
+            <SocialIcon
+              style={styles.iconStyle}
+              url={social.href}
+              network={social.network}
+              bgColor={theme.socialIconBgColor}
+              target="_blank"
+              rel="noopener"
+            />
+
+            {/* Show email href on hover */}
+            {isEmail && hoveredEmail && <span className="email-hover">{social.href}</span>}
+          </div>
+        );
+      }) : null}
     </div>
   );
 }

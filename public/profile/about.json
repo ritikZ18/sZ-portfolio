@@ -1,7 +1,7 @@
 {
     "about": {
         "introduction:": "Greetings! I'm Ritik Zambre, a Master's student in Software Engineering at Arizona State University.",
-        "currentFocus": "With a passion for cutting-edge technologies, I am deeply engaged in exploring and honing my skills in :",
+        "currentFocus": "Greetings! I'm Ritik Zambre, a Master's student in Software Engineering at Arizona State University.",
         "keyAreas": [
             "Web Technology",
             "Machine Learning",
@@ -13,13 +13,13 @@
              "Automated Meal Planner and GroceryList Genrator",
              "Smart Task manager with Priortization"
         ],
-        "learningJourney": "I am an avid learner with a continuous interest in diverse technological fields, including :",
+        "learningJourney": " Interested Technology : ",
         "fieldsOfInterest": [
             "Artificial Intelligence (AI)",
             "Web Designing and API Devlopment",
             "DevOps"
         ],
-        "softSkills": "In addition to my technical skills, I possess strong soft skills that enhance my teamwork and communication, including :",
+        "softSkills": " Strong Soft Skills :",
         "softSkillsList": [
             "Effective Communication",
             "Team Collaboration",
@@ -29,6 +29,6 @@
             "Traveling : Enthusiastic about exploring new destinations and cultures.",
             "Videography : Passionate about capturing and sharing my adventures."
         ],
-        "imageSource": "images/about/profile.png"
+        "imageSource": "https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
     }
 }

@@ -31,6 +31,7 @@ const styles = {
   buttonStyle: {
     margin: 5,
   },
+
 };
 
 const ProjectCard = (props) => {
