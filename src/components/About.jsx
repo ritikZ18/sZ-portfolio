@@ -97,10 +97,10 @@ const About = (props) => {
                 <Col style={styles.textContainer}>
                   <h1 style={styles.heading}>About Me</h1>
 
-                  <div style={styles.introTextContainer}>
+                  {/* <div style={styles.introTextContainer}>
                     <h2 style={styles.subHeading}>Introduction</h2>
                     <p>{data.about.introduction}</p>
-                  </div>
+                  </div> */}
 
                   <div style={styles.introTextContainer}>
                     <h2 style={styles.subHeading}>{data.about.currentFocus}</h2>
@@ -112,7 +112,7 @@ const About = (props) => {
                   </div>
 
                   <div style={styles.introTextContainer}>
-                    <h2 style={styles.subHeading}>Current Projects:</h2>
+                    <h2 style={styles.subHeading}>Projects: </h2>
                     <ul style={styles.list}>
                       {data.about.currentProject.map((field, index) => (
                         <li key={index}>{field}</li>
